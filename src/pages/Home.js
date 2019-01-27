@@ -8,7 +8,7 @@ import Feed from '../components/Feed';
 // TODO: feed
 export default () => (
   <div>
-    <Typography variant="display1">Welcome Home!</Typography>
+    <Typography variant="display1">Star Wars People</Typography>
     <Feed />
   </div>
 );
