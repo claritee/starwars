@@ -7,10 +7,10 @@ import response from '../result.json';
 
 class Feed extends Component {
   render() {
-    const items = response.results.map((person) => 
-      <ListItem>
+    const items = response.results.map((person, i) => 
+      <ListItem key={i}>
         <ListItemText>
-        {person.name}
+        <div data-hook={"person-" + i}>{person.name}</div>
         </ListItemText>
       </ListItem>
     )
